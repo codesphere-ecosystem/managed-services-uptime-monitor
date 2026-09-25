@@ -28,7 +28,3 @@ The contents of this repository (the `ci.main.yml` pipeline, `provider.yml` cata
 
 Please review our [Code of Conduct](CODE_OF_CONDUCT.md) to understand our community expectations.
 We welcome contributions! All contributions to this project must be made in accordance with the Developer Certificate of Origin (DCO). See our full [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-## Maintainers
-
-This repository is maintained by Codesphere SE. At least two senior Codesphere officers hold administrative access to this repository in addition to the day-to-day maintainers, so that departure of any single maintainer does not result in loss of control over the project. Maintainer access is revoked and reassigned promptly when a maintainer leaves the company.
