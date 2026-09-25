@@ -1,0 +1,30 @@
+schemaVersion: v0.4
+prepare:
+  steps: []
+test:
+  steps: []
+run:
+  container:
+    healthEndpoint: http://localhost:3001/
+    plan: 101
+    replicas: 1
+    network:
+      ports:
+        - port: 3000
+          isPublic: false
+        - port: 3001
+          isPublic: false
+      paths:
+        - port: 3001
+          path: /
+    env: {}
+    runAsUser: 1501
+    runAsGroup: 1010
+    volumeMounts:
+      - name: _workspace
+        mountPath: /home/user/app
+        workspacePath: ""
+      - name: _workspace
+        mountPath: /app/data
+        workspacePath: data
+    image: louislam/uptime-kuma:2.5.4
