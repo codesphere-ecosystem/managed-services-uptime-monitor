@@ -1,0 +1,30 @@
+name: uptime-kuma-template
+schemaVersion: v1
+backend:
+  landscape:
+    gitUrl: https://github.com/codesphere-cloud/uptime-kuma-template
+author: Codesphere
+category: Utilities
+description: Uptime Kuma template for workload uptime monitoring and alerting.
+displayName: Uptime Monitor
+iconUrl: https://uptimekuma.co/wp-content/uploads/2025/01/Uptime-Kuma-Logo.png
+configSchema:
+  type: object
+  properties: {}
+detailsSchema:
+  type: object
+  properties:
+    hostname:
+      type: string
+      format: uri
+  additionalProperties: false
+secretsSchema:
+  type: object
+  properties: {}
+resourceParameters: {}
+plans: []
+versions:
+  2.5.4:
+    ciProfile: main
+    gitRef: main
+    description: ""
