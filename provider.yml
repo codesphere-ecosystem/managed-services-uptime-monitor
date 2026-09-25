@@ -1,8 +1,8 @@
-name: uptime-kuma-template
+name: uptime-monitor
 schemaVersion: v1
 backend:
   landscape:
-    gitUrl: https://github.com/codesphere-cloud/uptime-kuma-template
+    gitUrl: https://github.com/codesphere-ecosystem/managed-services-uptime-monitor
 author: Codesphere
 category: Utilities
 description: Uptime Kuma template for workload uptime monitoring and alerting.
