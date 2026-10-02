@@ -4,7 +4,7 @@ prepare:
 test:
   steps: []
 run:
-  container:
+  uptime-kuma:
     healthEndpoint: http://localhost:3001/
     plan: 101
     replicas: 1
@@ -12,7 +12,8 @@ run:
       ports:
         - 3000
         - 3001
-    env: {}
+    env:
+      UPTIME_KUMA_DB_TYPE: sqlite
     runAsUser: 1501
     runAsGroup: 1010
     volumeMounts:
@@ -32,5 +33,5 @@ run:
       paths:
         - path: /
           stripPath: false
-          service: container
+          service: uptime-kuma
           port: 3001
