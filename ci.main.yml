@@ -1,4 +1,4 @@
-schemaVersion: v0.4
+schemaVersion: v0.5
 prepare:
   steps: []
 test:
@@ -10,13 +10,8 @@ run:
     replicas: 1
     network:
       ports:
-        - port: 3000
-          isPublic: false
-        - port: 3001
-          isPublic: false
-      paths:
-        - port: 3001
-          path: /
+        - 3000
+        - 3001
     env: {}
     runAsUser: 1501
     runAsGroup: 1010
@@ -25,6 +20,17 @@ run:
         mountPath: /home/user/app
         workspacePath: ""
       - name: _workspace
-        mountPath: /app/data
+        mountPath: app/data/
         workspacePath: data
     image: louislam/uptime-kuma:2.5.4
+  cs-router:
+    type: router
+    plan: 101
+    replicaCount: 1
+    network:
+      isLandscapeGateway: true
+      paths:
+        - path: /
+          stripPath: false
+          service: container
+          port: 3001
