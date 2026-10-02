@@ -1,0 +1,29 @@
+name: managed-services-uptime-monitor
+schemaVersion: v1
+backend:
+  landscape:
+    staticBuildArtifact: ghcr.io/codesphere-ecosystem/managed-services-uptime-monitor
+author: CS Ecosystem
+category: Utilities
+description: Uptime Kuma template for workload uptime monitoring and alerting.
+displayName: Uptime Monitor
+iconUrl: https://uptimekuma.co/wp-content/uploads/2025/01/Uptime-Kuma-Logo.png
+configSchema:
+  type: object
+  properties: {}
+detailsSchema:
+  type: object
+  properties:
+    hostname:
+      type: string
+      format: uri
+  additionalProperties: false
+secretsSchema:
+  type: object
+  properties: {}
+resourceParameters: {}
+plans: []
+versions:
+  2.5.4:
+    artifactTag: v1
+    description: ""
