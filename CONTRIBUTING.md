@@ -4,7 +4,7 @@ We welcome contributions of all kinds! By participating in this project, you agr
 
 ## How to Report Issues
 
-If you encounter a bug or have a feature request, please [open a new issue](https://github.com/codesphere-cloud/uptime-kuma-template/issues/new) on GitHub. Please include the following information:
+If you encounter a bug or have a feature request, please [open a new issue](https://github.com/codesphere-ecosystem/managed-services-uptime-monitor/issues/new) on GitHub. Please include the following information:
 
 * **Codesphere Workspace/Landscape configuration (if relevant):**
 * **Steps to Reproduce the Bug:**
@@ -14,7 +14,7 @@ If you encounter a bug or have a feature request, please [open a new issue](http
 
 ## How to Suggest Features or Improvements
 
-We'd love to hear your ideas! Please [open a new issue](https://github.com/codesphere-cloud/uptime-kuma-template/issues/new) to discuss your proposed feature or improvement before submitting code. This allows us to align on the design and approach.
+We'd love to hear your ideas! Please [open a new issue](https://github.com/codesphere-ecosystem/managed-services-uptime-monitor/issues/new) to discuss your proposed feature or improvement before submitting code. This allows us to align on the design and approach.
 
 ## Contributing Code
 
@@ -80,7 +80,7 @@ This repository contains a Codesphere deployment template for [Uptime Kuma](http
      git commit -s -m "Your commit message"
      ```
 
-6. **Submit a Pull Request:** [Open a new pull request](https://github.com/codesphere-cloud/uptime-kuma-template/compare) to the `main` branch of this repository. Please include a clear description of your changes and reference any related issues.
+6. **Submit a Pull Request:** [Open a new pull request](https://github.com/codesphere-ecosystem/managed-services-uptime-monitor/compare) to the `main` branch of this repository. Please include a clear description of your changes and reference any related issues.
 
 ## Code Review Process
 
